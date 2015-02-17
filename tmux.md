@@ -26,28 +26,24 @@
 ## Moving between windows
 |Cmd|Description|
 |----|----|
-|Ctrl-b n|(Move to the next window)|
-|Ctrl-b p|(Move to the previous window)|
-|Ctrl-b l|(Move to the previously selected window)|
-|Ctrl-b w|(List all windows / window numbers)|
-|Ctrl-b window number|(Move to the specified window number, the default bindings are from 0 -- 9)|
+|Ctrl-b n|Move to the next window|
+|Ctrl-b p|Move to the previous window|
+|Ctrl-b l|Move to the previously selected window|
+|Ctrl-b w|List all windows / window numbers|
+|Ctrl-b window number|Move to the specified window number, the default bindings are from 0 -- 9|
 
 ## Tiling commands
 |Cmd|Description|
 |----|----|
-|Ctrl-b %|(Split the window vertically)|
-|Ctrl-b : "split-window"|(Split window horizontally)|
-|Ctrl-b o|(Goto next pane)|
-|Ctrl-b q|(Show pane numbers, when the numbers show up type the key to goto that pane)|
-|Ctrl-b \{|(Move the current pane left)|
-|Ctrl-b \}|(Move the current pane right)|
+|Ctrl-b %|Split the window vertically|
+|Ctrl-b : "split-window"|Split window horizontally|
+|Ctrl-b o|Goto next pane|
+|Ctrl-b q|Show pane numbers, when the numbers show up type the key to goto that pane|
+|Ctrl-b \{|Move the current pane left|
+|Ctrl-b \}|Move the current pane right|
+|Ctrl-b : "break-pane"|Make a pane it own window|
 
-## Make a pane its own window
-|Cmd|Description|
-|----|----|
-|Ctrl-b : "break-pane"||
-
-## add to ~/.tmux.conf
+## Add to ~/.tmux.conf
 |Cmd|Description|
 |----|----|
 |bind \| split-window -h||
