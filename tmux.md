@@ -1,6 +1,6 @@
-Tmux cheet sheet
+#1 Tmux cheet sheet
 
-# session management
+#2 Session management
 |Cmd|Description|
 |----|----|
 |tmux list-sessions|List active sessions|
@@ -9,40 +9,46 @@ Tmux cheet sheet
 |tmux attach -t [session name]|Attach to named session|
 |tmux kill-session -t session-name|Kill named session|
 
-# window management
-Ctrl-b c Create new window
-Ctrl-b d Detach current client
-Ctrl-b l Move to previously selected window
-Ctrl-b n Move to the next window
-Ctrl-b p Move to the previous window
-Ctrl-b & Kill the current window
-Ctrl-b , Rename the current window
-Ctrl-b q Show pane numbers (used to switch between panes)
-Ctrl-b o Switch to the next pane
-Ctrl-b ? List all keybindings
+#2 Window management
+|Cmd|Description|
+|----|----|
+|Ctrl-b c|Create new window|
+|Ctrl-b d|Detach current client|
+|Ctrl-b l|Move to previously selected window|
+|Ctrl-b n|Move to the next window|
+|Ctrl-b p|Move to the previous window|
+|Ctrl-b &|Kill the current window|
+|Ctrl-b ,|Rename the current window|
+|Ctrl-b q|Show pane numbers (used to switch between panes)|
+|Ctrl-b o|Switch to the next pane|
+|Ctrl-b ?|List all keybindings|
 
-# moving between windows
-Ctrl-b n (Move to the next window)
-Ctrl-b p (Move to the previous window)
-Ctrl-b l (Move to the previously selected window)
-Ctrl-b w (List all windows / window numbers)
-Ctrl-b window number (Move to the specified window number, the
-default bindings are from 0 -- 9)
+#2 Moving between windows
+|Cmd|Description|
+|----|----|
+|Ctrl-b n|(Move to the next window)|
+|Ctrl-b p|(Move to the previous window)|
+|Ctrl-b l|(Move to the previously selected window)|
+|Ctrl-b w|(List all windows / window numbers)|
+|Ctrl-b window number|(Move to the specified window number, the default bindings are from 0 -- 9)|
 
-# Tiling commands
-Ctrl-b % (Split the window vertically)
-Ctrl-b : "split-window" (Split window horizontally)
-Ctrl-b o (Goto next pane)
-Ctrl-b q (Show pane numbers, when the numbers show up type the key
-to goto that pane)
-Ctrl-b { (Move the current pane left)
-Ctrl-b } (Move the current pane right)
+#2 Tiling commands
+|Cmd|Description|
+|----|----|
+|Ctrl-b %|(Split the window vertically)|
+|Ctrl-b : "split-window"|(Split window horizontally)|
+|Ctrl-b o|(Goto next pane)|
+|Ctrl-b q|(Show pane numbers, when the numbers show up type the key to goto that pane)|
+|Ctrl-b \{|(Move the current pane left)|
+|Ctrl-b \}|(Move the current pane right)|
 
+#2 Make a pane its own window
+|Cmd|Description|
+|----|----|
+|Ctrl-b : "break-pane"||
 
-# Make a pane its own window
-Ctrl-b : "break-pane"
-
-
-# add to ~/.tmux.conf
-bind | split-window -h
-bind - split-window -v
+#2 add to ~/.tmux.conf
+|Cmd|Description|
+|----|----|
+|bind \| split-window -h||
+|bind - split-window -v||
