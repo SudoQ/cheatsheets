@@ -1,14 +1,15 @@
 Tmux cheet sheet
-Source: https://www.youtube.com/watch?v=BHhA_ZKjyxo
 
 # session management
-tmux list-sessions
-tmux new -s session-name
-Ctrl-b d Detach from session
-tmux attach -t [session name]
-tmux kill-session -t session-name
+|Cmd|Description|
+|----|----|
+|tmux list-sessions|List active sessions|
+|tmux new -s session-name|Create new session with provided name|
+|Ctrl-b d |Detach from session|
+|tmux attach -t [session name]|Attach to named session|
+|tmux kill-session -t session-name|Kill named session|
 
-
+# window management
 Ctrl-b c Create new window
 Ctrl-b d Detach current client
 Ctrl-b l Move to previously selected window
@@ -19,7 +20,6 @@ Ctrl-b , Rename the current window
 Ctrl-b q Show pane numbers (used to switch between panes)
 Ctrl-b o Switch to the next pane
 Ctrl-b ? List all keybindings
-
 
 # moving between windows
 Ctrl-b n (Move to the next window)
