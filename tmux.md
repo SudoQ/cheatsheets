@@ -1,6 +1,6 @@
-#1 Tmux cheet sheet
+# Tmux cheet sheet
 
-#2 Session management
+## Session management
 |Cmd|Description|
 |----|----|
 |tmux list-sessions|List active sessions|
@@ -9,7 +9,7 @@
 |tmux attach -t [session name]|Attach to named session|
 |tmux kill-session -t session-name|Kill named session|
 
-#2 Window management
+## Window management
 |Cmd|Description|
 |----|----|
 |Ctrl-b c|Create new window|
@@ -23,7 +23,7 @@
 |Ctrl-b o|Switch to the next pane|
 |Ctrl-b ?|List all keybindings|
 
-#2 Moving between windows
+## Moving between windows
 |Cmd|Description|
 |----|----|
 |Ctrl-b n|(Move to the next window)|
@@ -32,7 +32,7 @@
 |Ctrl-b w|(List all windows / window numbers)|
 |Ctrl-b window number|(Move to the specified window number, the default bindings are from 0 -- 9)|
 
-#2 Tiling commands
+## Tiling commands
 |Cmd|Description|
 |----|----|
 |Ctrl-b %|(Split the window vertically)|
@@ -42,12 +42,12 @@
 |Ctrl-b \{|(Move the current pane left)|
 |Ctrl-b \}|(Move the current pane right)|
 
-#2 Make a pane its own window
+## Make a pane its own window
 |Cmd|Description|
 |----|----|
 |Ctrl-b : "break-pane"||
 
-#2 add to ~/.tmux.conf
+## add to ~/.tmux.conf
 |Cmd|Description|
 |----|----|
 |bind \| split-window -h||
