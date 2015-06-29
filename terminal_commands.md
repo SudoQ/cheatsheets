@@ -6,3 +6,9 @@ A collection of commands which is good to know
 |----|----|
 |tar -xf archive.tar.gz|Extract files|
 |curl example.com/tarball.tar.gz &#124; tar -xf -|Downloads the selected tarball and unpacks it
+
+#3 Networking
+|Cmd|Description|
+|----|----|
+|ip addr &#124 grep 'state UP' -A2 &#124 tail -n1 &#124 awk '{print $2}' &#124 cut -f1  -d'/'|Get you ip addr|
+|nmap -sL <ipaddr>/24|Scan the local network, useful for finding your ssh-server|
